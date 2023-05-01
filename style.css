@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+:root {
+  --fundo: #1a1924;
+  --header: #16151e;
+  --input: #24243d;
+  --fontcolor: #e1e1e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  background-color: var(--fundo);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+header {
+  color: var(--fontcolor);
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  align-items: center;
+  width: 100%;
+  background-color: var(--header);
+  padding: 24px;
+}
+
+header img {
+  height: 1.5em;
+}
+
+header img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+form {
+  display: none;
+}
+
+.show-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+input,
+button {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  background-color: var(--input);
+  color: var(--fontcolor);
+  border: none;
+}
+
+label {
+  color: var(--fontcolor);
+  margin-left: 6px;
+}
+
+::placeholder {
+  color: #aeaeae;
+}
+
+input[type="number"] {
+  width: 120px;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+}
+
+button:hover {
+  background-color: var(--fontcolor);
+}
+
+table {
+  color: var(--fontcolor);
+  border-collapse: collapse;
+  width: 411px;
+  margin-top: 24px;
+}
+
+table span img {
+  height: 24px;
+  width: 24px;
+  margin: 0 auto;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+}
+
+tr {
+  border-bottom: 0.5px solid var(--fontcolor);
+}
+
+table tr td:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+th {
+  font-weight: 300;
+  background-color: var(--input);
+}
+
+tbody tr:hover {
+  background-color: #23222f;
+}

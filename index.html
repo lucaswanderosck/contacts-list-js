@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meus Contatos</h1>
+      <img
+        src="./images/add_plus_icon.png"
+        alt="imagem do mais"
+        id="toggle-button"
+        title="Adicionar Contato"
+      />
+    </header>
+    <div class="container">
+      <main>
+        <form id="formContact">
+          <input
+            type="text"
+            name="name"
+            id="nameContact"
+            placeholder="Nome do contato"
+            required
+          />
+          <label for="telContact">+55</label>
+          <input
+            type="number"
+            name="tel"
+            id="telContact"
+            placeholder="Telefone"
+            required
+            maxlength="12"
+          />
+          <button type="submit" title="Adicionar">Adicionar</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome do contato</th>
+              <th>Telefone</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

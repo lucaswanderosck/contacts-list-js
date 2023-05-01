@@ -62,7 +62,7 @@ form {
 
 input,
 button {
-  padding: 8px;
+  padding: 12px;
   border: 1px solid;
   border-radius: 4px;
 }
@@ -103,7 +103,7 @@ button:hover {
 table {
   color: var(--fontcolor);
   border-collapse: collapse;
-  width: 411px;
+  width: 427px;
   margin-top: 24px;
 }
 

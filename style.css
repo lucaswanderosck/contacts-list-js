@@ -19,24 +19,22 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1280px;
+  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
 }
-
 header {
-  color: var(--fontcolor);
-  display: flex;
-  justify-content: center;
-  gap: 120px;
-  align-items: center;
-  width: 100%;
   background-color: var(--header);
-  padding: 24px;
+  padding: 24px 0;
+  color: var(--fontcolor);
+}
+.cabeçalho {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header img {
@@ -50,6 +48,9 @@ header img:hover {
 
 form {
   display: none;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .show-form {
@@ -57,7 +58,16 @@ form {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin: 10px 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.box-telefone {
+  display: flex;
+  align-items: center;
+}
+.box-telefone > input {
+  border-radius: 0 4px 4px 0;
 }
 
 input,
@@ -81,6 +91,9 @@ input {
 label {
   color: var(--fontcolor);
   margin-left: 6px;
+  background-color: var(--input);
+  padding: 10.7px;
+  border-radius: 4px 0 0 4px;
 }
 
 ::placeholder {
@@ -103,8 +116,9 @@ button:hover {
 table {
   color: var(--fontcolor);
   border-collapse: collapse;
-  width: 427px;
-  margin-top: 24px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 table span img {

@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda de contatos</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
-      <h1>Meus Contatos</h1>
-      <img
-        src="./images/add_plus_icon.png"
-        alt="imagem do mais"
-        id="toggle-button"
-        title="Adicionar Contato"
-      />
+      <div class="container">
+        <div class="cabeçalho">
+          <h1>Meus Contatos</h1>
+          <img
+            src="./images/add_plus_icon.png"
+            alt="imagem do mais"
+            id="toggle-button"
+            title="Adicionar Contato"
+          />
+        </div>
+      </div>
     </header>
-    <div class="container">
-      <main>
+    <main>
+      <div class="container">
         <form id="formContact">
           <input
             type="text"
@@ -27,15 +32,17 @@
             placeholder="Nome do contato"
             required
           />
-          <label for="telContact">+55</label>
-          <input
-            type="number"
-            name="tel"
-            id="telContact"
-            placeholder="Telefone"
-            required
-            maxlength="12"
-          />
+          <div class="box-telefone">
+            <label for="telContact">+55</label>
+            <input
+              type="number"
+              name="tel"
+              id="telContact"
+              placeholder="Telefone"
+              required
+              maxlength="12"
+            />
+          </div>
           <button type="submit" title="Adicionar">Adicionar</button>
         </form>
         <table>
@@ -47,8 +54,8 @@
           </thead>
           <tbody></tbody>
         </table>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
   <script src="./script.js"></script>
 </html>
